@@ -27,4 +27,20 @@ console.log(basket[i]);
 //  - Create a function called `empty`. It should:
 //   - reset the `basket` to an empty array
 
-function empty () 
+// function empty () 
+
+// Example Below
+console.log(`Basket is ${basket}`);
+console.log('Adding apples (expect true)', addItem('apples'));
+console.log(`Basket is now ${basket}`);
+
+// Stretch Goals
+
+ const maxItems = 5
+
+ function isFull(). (params) {
+     
+ }
+
+//- return `false` if the basket contains *less* than max number of items
+- return `true` otherwise (equal or more than maxItems)
