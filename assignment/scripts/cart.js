@@ -23,11 +23,17 @@ function listItems(item){
 console.log(basket[i]);
     }     
  }
+console.log(basket)
     
 //  - Create a function called `empty`. It should:
 //   - reset the `basket` to an empty array
+let reset = []
+function empty() {
+let basket = reset
+return basket
+}
+console.log(empty());
 
-// function empty () 
 
 // Example Below
 console.log(`Basket is ${basket}`);
@@ -36,16 +42,17 @@ console.log(`Basket is now ${basket}`);
 
 // Stretch Goals
 
- const maxItems = 5
+ const maxItems = 5;
+
  function isFull() {
-     if (basket< maxItems) {
+     if (basket < maxItems) {
          return false;
-     } else if (basket >= maxItems) {
-         return true
+     } else  {
+         return true;
      }
  }
  console.log('Expect true:', isFull())
- isFull()
+ isFull();
 
 //- return `false` if the basket contains *less* than max number of items
 // - return `true` otherwise (equal or more than maxItems)
@@ -59,16 +66,9 @@ function addItem(item) {
     basket.push(26);
     return true;  
 }
-console.log('Expect true', addItem());
+console.log('Expect true:', addItem());
 addItem(26);
 
 
-/////
 
-// Create a function called `removeItem`. It should:
-// - Take an input parameter for a string `item`
-// - Use [Array.indexOf]to find the index of the first matching item in the basket.
-// - Use [Array.splice] to remove the first matching item from the basket.
-// - Return the item removed or `null` if the item was not found
 
-function removeItem(item)
