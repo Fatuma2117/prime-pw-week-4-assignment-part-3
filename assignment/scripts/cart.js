@@ -30,8 +30,8 @@ console.log(listItems(basket));
 //   - reset the `basket` to an empty array
 let reset = []
 function empty() {
-let basket = reset
-return basket
+    basket = reset
+    return basket
 }
 console.log(empty());
 
