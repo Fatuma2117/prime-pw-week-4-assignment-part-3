@@ -9,21 +9,22 @@ let basket =[];
 //   - add the new item to the global array `basket`. 
 //   - return `true` indicating the item was added
 function addItem(item) {
-    basket.push(26);
+    basket.push('grapes');
     return true;  
 }
 console.log('Expect true', addItem());
-addItem(26);
+// addItem(26);
 
 // Create a function called `listItems`. It should:
 //   - loop over the items in the `basket` array
 //   - console.log each individual item on a new line
 function listItems(item){
-    for (let i = 0; i < array.length; i++) {
+    for (let i = 0; i < basket.length; i++) {
 console.log(basket[i]);
     }     
  }
-console.log(basket)
+console.log(listItems());
+console.log(listItems(basket));
     
 //  - Create a function called `empty`. It should:
 //   - reset the `basket` to an empty array
@@ -62,12 +63,12 @@ console.log(`Basket is now ${basket}`);
 //   - If an item was added to the array, return `true`
 //   - If there was no room and the item could not be added return `false`
 
-function addItem(item) {
-    basket.push(26);
-    return true;  
-}
-console.log('Expect true:', addItem());
-addItem(26);
+// function addItem(item) {
+//     basket.push(26);
+//     return true;  
+// }
+// console.log('Expect true:', addItem());
+// addItem(26);
 
 
 
